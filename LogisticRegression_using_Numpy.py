@@ -26,7 +26,6 @@ def train(X, y, lr=0.1, epochs=1000):
 
 W, b = train(X, y)
 
-# Predictions
 def predict(X, W, b):
     return (sigmoid(X @ W + b) >= 0.5).astype(int)
 
@@ -45,6 +44,7 @@ plt.contourf(xx1, xx2, probs, cmap="coolwarm", alpha=0.7)
 plt.scatter(X[:,0], X[:,1], c=y.ravel(), cmap="coolwarm", edgecolors="k")
 plt.title("Logistic Regression Decision Boundary")
 plt.show()
+
 
 
 
