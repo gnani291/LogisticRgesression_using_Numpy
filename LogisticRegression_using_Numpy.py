@@ -10,7 +10,6 @@ y = np.array([0]*50 + [1]*50).reshape(-1, 1)
 def sigmoid(z):
     return 1 / (1 + np.exp(-z))
 
-# Training with gradient descent
 def train(X, y, lr=0.1, epochs=1000):
     n, d = X.shape
     W = np.zeros((d,1))
@@ -47,4 +46,5 @@ plt.contourf(xx1, xx2, probs, cmap="coolwarm", alpha=0.7)
 plt.scatter(X[:,0], X[:,1], c=y.ravel(), cmap="coolwarm", edgecolors="k")
 plt.title("Logistic Regression Decision Boundary")
 plt.show()
+
 
