@@ -1,7 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 np.random.seed(0)
 X_class0 = np.random.randn(50, 2) + np.array([-2, -2])
 X_class1 = np.random.randn(50, 2) + np.array([2, 2])
